@@ -11,16 +11,26 @@
    <link rel="stylesheet" href="./styels.css" />
 </head>
 <body>
+  
  <div class="frame">
   <!-- Sidebar start -->
  
     <div class="sidebar" id="sidebar">
       <ol>
         <li class="bar">
-          <div class="step">Step 1</div>Your info</li>
-        <li class="bar"><div class="step">Step 2</div>Select plan</li>
-        <li class="bar"><div class="step">Step 3</div>Add-ons</li>
-        <li class="bar"><div class="step">Step 4</div>Summary</li>
+          <div class="liContainer">
+          <div class="step">Step 1</div>
+          <h5>Your info</h5></div></li>
+        <li class="bar">
+          <div class="liContainer">
+          <div class="step">Step 2</div>
+          <h5>Select plan</h5></div></li>
+        <li class="bar">
+          <div class="liContainer">
+          <div class="step">Step 3</div><h5>Add-ons</h5></div></li>
+        <li class="bar">
+          <div class="liContainer">
+          <div class="step">Step 4</div><h5>Summary</h5></div></li>
       </ol>
     </div>
   
@@ -28,12 +38,12 @@
   <!-- Sidebar end -->
 
   <!-- Step 1 start -->
-<div>
-<div>
+<div id="wrap" class="wrap">
+<div id="step1" class="step1">
   <h1>Personal info</h1>
   <h4>Please provide your name, email address, and phone number.</h4>
 
-  <form>
+  <form id="form1" class="form1">
     <label>Name</label>
     <input type="text" required placeholder="e.g. Stephen King"/>
     <label>Email Address</label>
@@ -48,7 +58,7 @@
   <!-- Step 1 end -->
 
   <!-- Step 2 start -->
-<div>
+<div id="step2" class="step2">
   <h1>Select your plan</h1>
   <h4>You have the option of monthly or yearly billing.</h4>
   <ul>
@@ -71,7 +81,7 @@
   <!-- Step 2 end -->
 
   <!-- Step 3 start -->
-<div>
+<div id="step3" class="step3">
   <h1>Pick add-ons</h1>
   <h4>Add-ons help enhance your gaming experience.</h4>
   <div class="step3menu"> 
@@ -116,33 +126,33 @@
 
   <!-- Step 4 start -->
 
-  <div>
+  <div id="step4" class="step4">
     <h1>Finishing up</h1>
     <h4>Double-check everything looks OK before confirming.</h4>
   </div>
 
   <!-- Dynamically add subscription and add-on selections here -->
 
-  <div>
-    <h2></h2>
+  <div id="subscription" class="subscription">
+      <h2></h2>
+
+    Total (per month/year)
+
+    <div>
+      <button>Go Back</button>
+      <button>Confirm</button>
   </div>
-  Total (per month/year)
-
-  <div>
-    <button>Go Back</button>
-    <button>Confirm</button>
- </div>
-
+  </div>
   <!-- Step 4 end -->
 
   <!-- Step 5 start -->
-
+<div id="step5" class="step5">
   Thank you!
 
   Thanks for confirming your subscription! We hope you have fun 
   using our platform. If you ever need support, please feel free 
   to email us at support@loremgaming.com.
-
+</div>
   <!-- Step 5 end -->
 </div>
 </div>
@@ -150,6 +160,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-  <script src="./scripts.js"></script>
+
+  <script src="./scripts.js" ></script>
 </body>
 </html>
