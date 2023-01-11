@@ -50,7 +50,7 @@
     <input type="email" required placeholder="e.g. stephenking@lorem.com"/>
     <label>Phone Number</label>
     <input type="tel" required placeholder="e.g. +1 234 567 890" />
-    <input type="submit" value="Next Step"/>
+    <input id="submitStep1"type="submit" value="Next Step"/>
     
   </form>
 </div>
@@ -61,19 +61,27 @@
 <div id="step2" class="step2">
   <h1>Select your plan</h1>
   <h4>You have the option of monthly or yearly billing.</h4>
-  <ul>
-    <li><h3>Arcade</h3>$9/mo</li>
-    <li><h3>Advanced</h3>$12/mo</li>
-    <li><h3>Pro</h3>$15/mo</li>
+  <ul id="menuStep2" class="menuStep2">
+    <li id="arcade" class="arcade"><h3>Arcade</h3>$9/mo</li>
+    <li id="advanced" class="advanced" ><h3>Advanced</h3>$12/mo</li>
+    <li id="pro" class="pro"><h3>Pro</h3>$15/mo</li>
   </ul> 
-  <div>
-      Monthly
-      <input type="checkbox"/>
-      Yearly
+  <div class="montORyear" id="montORyear">
+      <span id="monthly">Monthly</span>
+      <button class="toggle" id="toggle">
+        <span id="span1" class="span1">
+          <div id="backdrop" class="backdrop">
+            <div class="ball" id="ball"></div>
+          </div>
+        </span>
+      </button>
+  
+      <span id="yearly">Yearly</span>
   </div>
- <div>
-    <button>Go Back</button>
-    <button>Next Step</button>
+  
+ <div class="buttons">
+  <button id="returnToStep1" class ="goBack">Go Back</button>
+  <button id="submitStep2" class="nextStep">Next Step</button>
  </div>
   
 </div>
@@ -115,8 +123,8 @@
   </div>
 
   <div>
-    <button>Go Back</button>
-    <button>Next Step</button>
+    <button id="returnToStep1">Go Back</button>
+    <button id="submitStep2">Next Step</button>
  </div>
 
 </div>
